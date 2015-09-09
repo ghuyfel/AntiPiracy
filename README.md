@@ -36,7 +36,7 @@ private:
 4) In "applicationui.cpp", add this to your constructor :
 
 ```sh
-    // Instantiate the object before creating the object if you need to access it from QML
+    // Instantiate the object before creating the UI if you need to access it from QML
     m_installSourceLocator = new InstallSourceLocator(this);
 
     // Create scene document from main.qml asset, the parent is set
